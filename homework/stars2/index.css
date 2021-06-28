@@ -1,0 +1,30 @@
+li {
+    display: block;
+}
+
+li {
+    display: inline;
+}
+ 
+ul .active {
+    display: none;
+}
+
+ul .inactive {
+    display: inline;
+}
+
+ul:hover .active {
+    display: inline;
+} 
+ ul:hover .inactive {
+     display: none;
+ }
+
+li:hover ~ li .active{
+    display: none;
+}
+
+li:hover ~ li .inactive {
+    display: inline;
+}
