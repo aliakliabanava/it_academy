@@ -1,0 +1,25 @@
+input {
+    visibility: hidden;
+  }
+  
+    input:checked::after {
+    visibility: visible;
+    dislay:block;
+    content: '+';
+    color: blue;
+  }
+  
+  input::after {
+    visibility: visible;
+    dislay:block;
+    content: '-';
+    color: red;
+  }
+  
+  input ~ span {
+    color: red;
+  }
+  input:checked ~ span {
+    color: blue;
+  }
+  

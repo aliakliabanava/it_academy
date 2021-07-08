@@ -1,0 +1,45 @@
+
+.images {
+    position: relative;
+    height: 500px;
+}
+
+
+div.images img#biohazard {
+    position: absolute;
+    left: 250px;
+    top: 30px;
+}
+
+div.images img#biohazard:hover {
+    z-index: 1;
+}
+
+div.images img#Man {
+     position: absolute;
+     left: 460px;
+     top: 30px;
+}
+
+div.images img#Man:hover {
+    z-index: 1;
+}
+
+div.images img#smoking {
+     position: absolute;
+     left: 330px;
+     top: 70px;
+}
+
+div.images img#Yin {
+     position: absolute;
+     left: 350px;
+     top: 250px;
+}
+
+div.images img#Yin:hover {
+    z-index: 1;
+}
+
+
+ 
