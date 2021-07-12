@@ -47,6 +47,19 @@ a {
     display: inline;
 }
 
+.join {
+    position: fixed;
+    right: 40px;
+    top: 40px;
+    display: block;
+    width: 90px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 15px;
+    background-color: aquamarine;
+    border: solid 2px green;
+}
+
 
 @media (min-width: 640px) {
 .main {
