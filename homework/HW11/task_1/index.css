@@ -1,0 +1,33 @@
+input {
+    display: none;
+  }
+
+ input:checked ~ label{
+  background-color: rgb(134, 213, 240);
+}
+
+input:not(:checked) + label {
+  background-color: gray;
+}
+
+.text {
+  display: none;
+  width: 300px;
+}
+
+input:checked + label + .text {
+  display: block;
+  background: rgb(134, 213, 240);
+}
+
+.text {
+  position: absolute;
+  top: 45px;
+}
+
+label {
+  display: inline-block;
+  height: 30px;
+  padding: 10px;
+}
+

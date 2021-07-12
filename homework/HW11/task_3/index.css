@@ -1,0 +1,43 @@
+input {
+    display: none;
+  }
+  
+label {
+    display: block;
+    padding: 20px;
+    font-size: 20px;
+    background-color: gray;
+    margin: 5px;
+  }
+  
+input:checked + label {
+    background-color: lightgray;
+  }
+  
+input:checked + label + div {
+    display: block;
+    padding: 15px;
+  }
+  
+label + div {
+    display: none;
+  }
+  
+label:hover {
+    background-color: lightgray;
+  }
+  
+  
+label:after {
+    content: "+";
+    position: absolute;
+    right: 30px;
+    font-size: 20px;
+  }
+  
+input:checked ~ label:after {
+    content: "-";
+    position: absolute;
+    right: 30px;
+    font-size: 20px;
+  }

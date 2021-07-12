@@ -1,0 +1,22 @@
+input {
+  display: none;
+}
+label {
+  text-decoration: underline;
+}
+input:checked + label {
+  display: block;
+}
+
+.text {
+  display: none;
+}
+
+input:checked ~ .text {
+  display: block;
+}
+
+input:checked + label {
+  display: none;
+}
+
