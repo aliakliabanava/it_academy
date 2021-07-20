@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    margin-bottom: 5px;
+  }
+
+h1 {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+   div.page {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .header, .footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgb(22, 85, 90);
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .navigation {
+    width: 100%;
+    text-align: center;
+    background-color:rgb(180, 244, 248);
+  }
+  
+  ul {
+    color: black;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    display: block;
+    padding: 15px;
+    text-transform: uppercase;
+  }
+  
+  li:hover {
+    background-color: rgb(128, 199, 223);
+    color: black;
+  }
+
+  .info_2 {
+    background-color: rgb(228, 251, 252);
+    padding: 5px;
+  }
+
+  .info_1, .info_3 {
+      background-color: rgb(180, 244, 248);
+      padding: 5px;
+  }
+
+  .banner_1, .banner_2, .shop, .small_banner_1, .small_banner_2, .small_banner_3 {
+      background-image: url(image.jpeg);
+      background-size: cover;
+      color: rgb(22, 85, 90);
+      min-height: 120px;
+      text-align: center;
+      
+  }
+
+ .banner_2  p {
+     width: 200px;
+     position: relative;
+     margin: 0 auto;
+     padding-bottom: 10px;;
+ }
+
+  .aside {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      
+}
+
+.small_banner_1, .small_banner_2 {
+    flex-basis: 49.5%;
+}
+
+.banner_1, .banner_2, .shop, .small_banner_3 {
+    flex-basis: 100%;
+}
+
+.button {
+    display: block;
+    height: 30px;
+    width: 100px;
+    border: solid 2px rgb(22, 85, 90);
+    color: rgb(22, 85, 90);
+    background-color: rgb(191, 246, 250);
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 5px 5px;
+    margin: 0 auto;
+    text-decoration: none;
+    
+}
+
+.shop, .small_banner_1, .small_banner_2, .small_banner_3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (min-width: 991px) {
+
+    .banner_1, .banner_2, .shop, .small_banner_1, .small_banner_2, .small_banner_3 {
+        min-height: 200px;
+    }
+
+    div.page {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: space-between;
+    }
+
+    .header, .footer {
+        width: 100%;
+    }
+
+    .navigation {
+        margin: 10px 0px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    li {
+        border-right: solid 2px white;
+        margin-bottom: 0;
+        width: 16.7%;
+    }
+
+    .aside {
+        order: 1;
+        width: 30%;
+    }
+
+    .footer {
+        order: 3;
+    }
+
+    .main_info {
+        order: 2;
+        flex-basis: 69%;
+    }
+
+    .banner_2  p {
+       width: 100%;
+    }
+}
