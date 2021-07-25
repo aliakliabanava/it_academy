@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <title>Forms</title>
+</head>
+ <body>
+   <h1>Отправьте ваш отзыв</h1>
+  <form action="https://fe.it-academy.by/TestForm.php" method="post">
+    <fieldset>
+      <legend>Введите ваши данные</legend>
+      <label><input type="text" name="name" required><span> * </span>Имя</label><br>
+      <label><input type="text" name="mail" required><span> * </span>e-mail</label><br>
+      <textarea placeholder="форма отправки" name="textarea"></textarea><br>
+      <input type="submit" value="Отправить"><br>
+      <label><em>* - обязательное поле</em></label>
+    </fieldset>
+  </form>
+
+  <h1>Списки</h1>
+  <form action="https://fe.it-academy.by/TestForm.php" method="post">
+    <fieldset>
+      <legend>Города РБ</legend>
+        <select name="live_art">
+            <option value="1">город</option>
+            <option value="10">деревня</option>
+            <option value="11">поселок</option>
+            <option value="12">агрогородок</option>
+        </select>
+
+        <select name="select" size=6>
+            <optgroup label="Города РБ">
+                <option value="01">Минск</option>
+                <option value="02">Брест</option>
+                <option value="03">Витебск</option>
+            </optgroup>
+            <optgroup label="Города России">
+                <option value="04">Москва</option>
+                <option value="05">Омск</option>
+                <option value="06">Питер</option>
+            </optgroup>
+          </select><br>
+
+          <label>Выберите ваш город<br><input type="text" name="city" required> <input type="submit" value="OK"></label>
+      </fieldset>
+  </form>
+
+  <h1>Загрузка файла на сервер</h1>
+  <form action="https://fe.it-academy.by/TestForm.php" method="post">
+    <fieldset>
+      <legend>Выберите фото</legend>
+      <label>Файл: <input type="file" name="file"></label><br>
+      <label>Подпись:<br><input type="text" name="signum" required> <input type="submit" value="загрузить"></label>
+    </fieldset>
+  </form>
+
+  <h1>Валидация данных</h1>
+  <form action="https://fe.it-academy.by/TestForm.php" method="post">
+    <fieldset>
+      <legend>Форма регистрации</legend>
+      <label><input type="text" name="name_rus" placeholder="Только русские буквы" pattern="[А-Яа-яЁё]{1,}" required> Имя</label><br>
+      <label>Телефонный номер в формате<br>
+      +ХХХ-ХХ-ХХХХХХХ<br><input type="text" name="phone" placeholder="+375-29-1111111" required pattern="\+[0-9]{3}-[0-9]{2}-[0-9]{7}"> <input type="submit" value="зарегистрироваться"></label>
+    </fieldset>
+  </form>
+  </body>
+</html>

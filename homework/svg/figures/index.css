@@ -1,0 +1,45 @@
+.first-1:hover {
+    stroke-width: 15;
+  }
+  
+  .first-2:hover {
+    stroke: red;
+  }
+  
+  .first-1, .first-2 {
+    stroke-width: 5;
+    stroke: darkblue;
+  }
+  
+  
+  .rect-1:hover, .rect-2:hover {
+    fill: yellow;
+  }
+  
+  .rect-2:hover {
+    stroke: black;
+  }
+  
+  .rect-1, .rect-2 {
+    fill: red;
+    stroke-width: 5;
+    stroke: red;
+  }
+  
+  .circle-1, .circle-2 {
+    stroke: lightgreen;
+    fill: lightgreen;
+  }
+  
+  .circle-2:hover {
+    transform: scale(1.5);
+    x: -80;
+    y: 45;
+    fill: black;
+    stroke: black;
+  }
+  
+  .circle-1:hover {
+    fill: pink;
+    transform: translate (70 0);
+  }

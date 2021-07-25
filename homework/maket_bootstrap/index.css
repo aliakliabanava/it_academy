@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    font-family: serif;
+  }
+.row, .aside .col, .text .col {
+    margin-bottom: 5px;
+}
+
+.register {
+  align-items: baseline;
+}
+
+.icon {
+ color: rgb(157, 214, 211);
+ font-size: 24px;
+}
+
+.login {
+ text-align: right;
+ border-right: 1px solid rgb(157, 214, 211);
+}
+
+.signin {
+ text-align: left;
+}
+
+.login, .signin {
+ color: rgb(87, 146, 156);
+}
+
+.header, .footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgb(22, 85, 90);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+  }
+
+h1 {
+    font-weight: 400;
+    font-size: 24px;
+  }
+
+.info_2 {
+    background-color: rgb(228, 251, 252);
+  }
+
+.info_1, .info_3 {
+      background-color: rgb(180, 244, 248);
+  }
+
+.navigation {
+    margin-right: 0px;
+    text-align: center;
+    background-color:rgb(180, 244, 248);
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+.navigation .col {
+    height: 40px;
+    padding-top: 8px;
+}
+
+.navigation .col:hover {
+    background-color: rgb(128, 199, 223);
+    color: black;
+  }
+
+.aside .col {
+      display: flex;
+      background-image: url(image.jpeg);
+      background-size: cover;
+      color: rgb(22, 85, 90);
+      min-height: 180px;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+  }
+
+.aside {
+      justify-content: space-between;
+  }
+
+.banner_2  p {
+    width: 300px;
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.button {
+    height: 30px;
+    width: 100px;
+    border: solid 2px rgb(22, 85, 90);
+    color: rgb(22, 85, 90);
+    background-color: rgb(191, 246, 250);
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 5px 5px;
+    margin: 0 auto;
+    text-decoration: none;
+    
+}
+
+.small_banner_1, .small_banner_2 {
+  flex-basis: 49.5%;
+}
+
+.banner_2_content {
+  height: 150px;
+  width: 300px;
+  background-color: rgba(253,253,252, .2);
+}
+
+.container-fluid {
+  margin: 5px 5px;
+}
+
+.navigation, .header, .register, .footer, .aside, .text {
+  margin-right: 0px;
+}

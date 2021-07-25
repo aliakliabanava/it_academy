@@ -1,0 +1,14 @@
+p {
+    font-weight: bold;
+  }
+  
+  div {
+    width: 600px;
+    height: 390px;
+    overflow-y: scroll;
+  }
+  
+  a {
+    display: block;
+    padding-bottom: 20px; 
+  }

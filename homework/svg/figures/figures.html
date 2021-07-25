@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>1</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <svg style="width: 500; height: 500;">
+    
+     <defs>
+    <polygon id="first" points='20,10 7,70 80,25' x1=0 y1=0 x2=150 y2=150   fill=blue />
+       </defs>
+    
+     <use xlink:href="#first" class="first-1" x=20 y=10  />
+     <use xlink:href="#first" class="first-2" x=20 y=80  opacity=0.5 />
+    
+    <defs>
+    <rect id="rect" x=120 y=10 width=70 height=70 />
+    </defs>
+    
+    <use xlink:href="#rect" class="rect-1" />
+    <use xlink:href="#rect" class="rect-2" transform='scale(0.5)' x=120 y=200 />
+    
+    <defs>
+    <circle id="circle" cx=250 cy=40 r=40 />
+    </defs>
+    
+    <use xlink:href="#circle" class="circle-1" />
+    <use xlink:href="#circle" class="circle-2" x=0 y=90 stroke-width=10 stroke-dasharray='15,5'/>
+    
+  </svg>
+
+</body>
+</html>

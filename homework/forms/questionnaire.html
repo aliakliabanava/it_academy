@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Questionnaire</title>
+</head>
+ <body>
+   <h1>Заполните анкету</h1>
+  <form action="https://fe.it-academy.by/TestForm.php" method="post">
+    <fieldset>
+      <legend>Личные данные</legend>
+        <input type="text" name="surname" placeholder="Фамилия" required><br>
+        <input type="text" name="name" placeholder="Имя" required><br>
+        <input type="text" name="fathername" placeholder="Отчество" required><br>
+  
+            <fieldset>
+              <legend>Паспортные данные</legend>
+              <input type="text" name="pass_N" required>
+              <input type="text" name="pass_Ser" required><br>
+            </fieldset>
+
+            <fieldset>
+              <legend>Дата рождения</legend>
+              <label><input type="text" name="year" required> Год рождения</label><br>
+              <label><select>
+                <option value="1">Январь</option>
+                <option value="2">Февраль</option>
+                <option value="3">Март</option>
+                <option value="4">Апрель</option>
+                <option value="5">Май</option>
+                <option value="6">Июнь</option>
+                <option value="7">Июль</option>
+                <option value="8">Август</option>
+                <option value="9">Сентябрь</option>
+                <option value="10">Октябрь</option>
+                <option value="11">Ноябрь</option>
+                <option value="12">Декабрь</option>
+                </select>Месяц</label><br>
+              <label><input type="text" name="date" required> Дата</label>
+            </fieldset>
+            
+            <label><select name="nationality">
+                <option value="1">РБ</option>
+                <option value="1">РФ</option>
+                <option value="1">GER</option>
+            </select> Национальность</label><br>
+
+            <label>Адрес: </br><textarea name="adress" required></textarea></label><br>    
+    </fieldset>
+    
+    <fieldset>
+      <legend>Интересы</legend>
+        <fieldset>
+          <legend>Хобби</legend>
+            <label><input type="checkbox" value="yes" name="fish">Рыбалка</label><br>
+            <label><input type="checkbox" value="yes" name="stars">Астрономия</label><br>
+            <label><input type="checkbox" value="yes" name="diving">Дайвинг</label><br>
+            <label><input type="checkbox" value="yes" name="stamp">Марки</label><br>
+        </fieldset>
+      
+        <fieldset>
+          <legend>Домашние животные</legend>
+            <select name="select[]" multiple size=9>
+              <optgroup label="Попугаи">
+              <option value="01">Волнистый</option>
+              <option value="02">Ара</option>
+              <option value="03">Неразлучник</option>
+              </optgroup>
+              <optgroup label="Рыба">
+              <option value="04">Караси</option>
+              <option value="05">Окуни</option>
+              <option value="06">Осетр</option>
+              </optgroup>
+              <optgroup label="Птицы">
+              <option value="07">Соловьи</option>
+              <option value="08">Воробьи</option>
+              </optgroup>
+            </select>
+        </fieldset>
+    </fieldset>
+   
+   
+   <fieldset>
+      <legend>Данные для входа и восстановления пароля</legend>
+      <label><input type="text" name="login" minlength=5 placeholder="Логин" required pattern="[A-Za-z]{5,}"> Только латиница не менее 5 символов</label><br>
+      <label><input type="password" name="password" mixlength=10 placeholder="Пароль" pattern="[A-Za-z]{10,}" required> Только латиница не менее 10 символов</label><br>
+    </fieldset>
+   
+    <fieldset>
+      <legend>Координаты</legend>
+      <input type="text" name="mail" placeholder="введите адрес почты" required> <input type="text" name="web" placeholder="введите адрес сайта" required>
+    </fieldset>
+   
+     <fieldset>
+      <legend>Цифры</legend>
+      <input type="number" min="1" max="10" step="1" name="numbers"></br>
+      <input type="range" min="1" max="10" step="1">
+    </fieldset>
+  
+    <fieldset>
+      <legend>Кнопки управления</legend>
+      <input type="file" name="file">
+      <input type="submit" value="Отправить">
+      <input type="reset" value="Сбросить">
+    </fieldset>
+  
+  </form>
+  </body>
+</html>
