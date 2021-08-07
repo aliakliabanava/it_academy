@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        var countries = {};
+
+// Добавляет в обьект countries пару с ключом как 1 аргумент и значением как 2 аргумент
+function addCountry(countryName, capitalName) {
+    countries[countryName] = capitalName;
+}
+
+// удаляет пару кюч-значение с переданным ключом
+function deleteCountry (countryName) {
+    delete countries[countryName];
+}
+
+// выводит информацию о стране либо отдает сообщение об ошибке
+function getCountryInfo (countryName) {
+    if (countryName in countries) {
+        return "страна: " + countryName + " столица : " + countries[countryName];
+    } else {
+        return " нет информации о " + countryName;
+    }
+}
+
+// возвращает все страны
+function getAllCountries () {
+    var allCountries = "";
+    for (var country in countries) {
+        allCountries+= "\n" + getCountryInfo(country);
+    }
+    return allCountries;
+}
+    </script>
+    
+    <title>flex</title>
+ </head>
+<body>
+
+    <button onclick="enterInfo ()">Ввод информации о стране</button>
+    <button onclick="getInfo ()">Получении информации о стране</button>
+    <button onclick="countryList ()">Перечень всех стран</button>
+    <button onclick="delCountry ()">Удаление информации о стране</button>
+    <script src="index.js"></script>
+
+</body>
+</html>

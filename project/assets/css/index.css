@@ -8,7 +8,7 @@ p.body_text {
 }
 
 .header {
-    padding: 0px 5px;
+    /* padding: 0px 5px; */
     background-image: url(/project/assets/images/imgonline-com-ua-Resize-v3CRh1nYEYGmBBkv.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -91,13 +91,27 @@ p.body_text {
 
 .navbar a {
     padding-left: 10px !important;
-    color: white !important;
+    color: white;
     border-radius: 5px;
 }
 .navbar a:hover {
     background-color: rgba(227, 235, 241, .4);
 }
 
+.nav_form {
+    border: none;
+}
+.nav_form:focus {
+    border: none;
+    box-shadow: none;
+}
+
+/* .form_search::after {
+    font-family: "Font Awesome 5 free"; 
+	font-weight: 900;
+	content: "\f07a";
+    display: inline-block;
+} */
 
 .form_search {
     position: relative;
@@ -123,16 +137,15 @@ p.body_text {
 .about {
     position: relative;
     padding: 60px 50px;
-    margin: -60px auto;
     display: block;
-    width: 75%;
     min-height: 450px;
     color: white;
     background-color: #5D62B5;
-    border-radius: 25px;
+   
 }
 
 .add_info_about {
+    padding-bottom: 100px;
     width: 75%;
     margin: 0 auto;
 }
@@ -175,9 +188,6 @@ h2 {
     flex-direction: column;
 }
 
-/* .info_box {
-    display: flex;
-} */
 
 .info_box img {
     width: 50px;
@@ -195,7 +205,38 @@ h2 {
     font-weight: 600;
 }
 
-@media (min-width: 640px) {
+footer {
+    justify-content: space-between;
+    padding-top: 40px;
+    background-color: #F5F5F5;
+}
+
+.s_media {
+    color: #F2726F;
+}
+
+.links ul{
+    list-style-type: none;
+    column-count: 2;
+    padding-left: 0px;
+}
+
+.links li a{
+    color: black;
+    text-decoration: none;
+}
+
+.bottom {
+    display: block;
+    font-size: 12px;
+    height: 50px;
+    color: white;
+    padding-top: 15px;
+    text-align: right;
+    background-color: #5D62B5;
+}
+
+@media (min-width: 576px) {
     .appointment {
         display: inline;
         flex-basis: 25%;
@@ -205,10 +246,26 @@ h2 {
         height: ;
     }
 
-    .bg-violet {
+    .navbar a:hover {
+        color: black;
+        /* font-weight: bolder; */
+        background: none;
+    }
+
+ .nav_panel {
         background-color: white;
         border-radius: 10px;
+        padding-left: 15px;
+        justify-content: space-between;
+        font-weight: 600;
     }
+
+    .nav_items {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    
 
     .header {
         display: block;
@@ -218,6 +275,12 @@ h2 {
     .register, .navbar, .head_info {
         width: 75%;
         margin: 0 auto;
+    }
+
+    .about {
+        width: 75%;
+        margin: -60px auto;
+        border-radius: 25px;
     }
     
    .about::after {
@@ -239,4 +302,52 @@ h2 {
        margin-top: 40px;
        flex-basis: 30%;
    }
+
+   section.impact {
+       position: relative;
+       padding-top: 80px;
+       min-height: 350px;
+       background-color: #29C3BE;
+       color: white;
+   }
+
+   section.impact::after {
+       border-radius: 25px;
+       position: absolute;
+       right: 150px;
+       top: -100px;
+       content: url(/project/assets/images/pup300.png);
+   }
+
+   .impact_info {
+       width: 75%;
+       margin: 0 auto;
+   }
+
+   .impact_items {
+       padding-top: 40px;
+       justify-content: space-between;
+   }
+
+   .impact_item img {
+       padding-top: 5px;
+       width: 55px;
+       /* float: left; */
+   }
+
+   .impact_item p {
+       color: #5D62B5;
+       display: inline-block;
+       vertical-align: top;
+       padding-left: 5px;
+   }
+
+
+   .number {
+       color: white;
+       font-size: 30px;
+       font-weight: bolder;
+   }
+
+  
 }

@@ -22,26 +22,14 @@
                 <div class="call"> <i class="fas fa-phone-alt"></i> <p><span class="naming">call us </span> <br>(555) Pup-Cares</p></div>
                 <div class="appointment"> <a class="button">make an appointment</a> </div>
             </div>
-        
-        <!-- <div class="navigation">
-            <div class="nav_item">Servises</div>
-            <div class="nav_item">Spesials</div>
-            <div class="nav_item">Facilities</div>
-            <div class="nav_item">Rewiews</div>
-            <div class="nav_item">Shop</div>
-            <div class="nav_item">About</div>
-            <div class="nav_item"></div>
 
-        </div> -->
-
-            <nav class="navbar navbar-expand-lg navbar-light bg-violet">
-                <a class="navbar-brand" href="#">Navigation</a>
+            <nav class="navbar navbar-expand-sm navbar-light nav_panel">
                 <button class="navbar-toggler btn_nav" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                  <span class="navbar-toggler-icon stripes"></span>
              </button>
           
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <div class="collapse navbar-collapse nav_items" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 nav_items">
                  <li class="nav-item active">
                      <a class="nav-link item" href="#">Services <span class="sr-only">(current)</span></a>
                     </li>
@@ -62,7 +50,7 @@
                      </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0 form_search">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                <input class="form-control mr-sm-2 nav_form" type="search">
                 <button class="btn_search" type="submit"><i class="fas fa-search"></i></button>
                 </form>
                 </div>
@@ -73,25 +61,72 @@
         </div>
 
         <main>
-                <div class="about">
+                <section class="about">
                     <!-- <div class="blob"></div> -->
                     <p class="overline">who we are</p>
                     <h2>Nemo enim ipsam voluptatem quia voluptas in proident</h2>
                     <p class="body_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vehicula libero et eros vehicula ullamcorper. Nulla eu ultrices quam, vulputate volutpat quam. Sed pharetra lectus vel metus fringilla, non hendrerit metus venenatis. Aliquam maximus, libero vitae aliquam tincidunt, erat augue sodales nulla, sit amet egestas ligula sem sit amet nisi. Ut ipsum metus, rhoncus eget purus vel, hendrerit varius velit.</p>
-                </div>
+                </section>
                 <div class="dog_center"><img id="dog" src="/project/assets/images/dog.png"></div>
                 
 
-                <div class="add_info_about">
+                <section class="add_info_about">
                     <div class="head_infobox"><p class="overline">our promise to you</p>
                     <h2>Sed perspiciatis omnis iste natus</h2></div>
                     <div class="info_box"><img src="/project/assets/images/dog_love_24x.png" alt="love andcare"><h3>24/7 Love & Care</h3><p class="body_text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti quos dolores et quas.</p></div>
                     <div class="info_box"><img src="/project/assets/images/dog_vet_24x.png" alt="dog veterinar"><h3>On-site Veterinarian</h3><p class="body_text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti quos dolores et quas.</p></div>
-                    <div class="info_box"><img src="/project/assets/images/dog_stream_24x.png" alt=""><h3>Life-stream Cameras</h3><p class="body_text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti quos dolores et quas.</p></div>
+                    <div class="info_box"><img src="/project/assets/images/dog_stream_24x.png" alt="dog stream"><h3>Life-stream Cameras</h3><p class="body_text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti quos dolores et quas.</p></div>
+                </section>
 
+                <section class="impact"> 
+                    <div class="impact_info">
+                    <p class="overline">our impact</p>
+                    <h2>Nemo enim ipsam voluptatem quia voluptas in proident</h2>
+                    <div class="impact_items row">
+                        <div class="impact_item col-3"><img src="/project/assets/images/dog_duckling_24x.png" alt="dog duckling"><p><span class="number">3,700</span><br>puppy baths</p></div>
+                        <div class="impact_item col-3"><img src="/project/assets/images/dog_house_24px.png" alt="dog house"><p><span class="number">4,500</span><br>dogs boarded</p></div>
+                        <div class="impact_item col-3"><img src="/project/assets/images/dog_leash_24x.png" alt="leash"><p><span class="number">2,900</span><br>pups trained</p></div>
+                        <div class="impact_item col-3"><img src="/project/assets/images/dog_food_bowl_24x.png" alt="food"><p><span class="number">12k+</span><br>meals served</p></div>
+                    </div>
                 </div>
+                </section>
 
         </main>
+
+        <footer class="row">
+            <div class="pepco col-3">
+                <div class="icon"> <i class="fas fa-volleyball-ball"></i> Pepco </div>
+                <p> This is a blurb about the company sed do eusimod tempor incididunt ut labore et dolore ex magna aliqua</p>
+                <div class="s_media row">
+                    <i class="fab fa-facebook-f col-2"></i>
+                    <i class="fab fa-twitter col-2"></i>
+                    <i class="fab fa-instagram col-2"></i>
+                    <i class="fab fa-youtube col-2"></i>
+                </div>
+            </div>
+            <div class="links col-5">
+                <p class="naming">Explore Links</p>
+            <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Specials</a></li>
+                <li><a href="">Estimates</a></li>
+                <li><a href="">Rewiews</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="">FAQs</a></li>
+            </ul>
+            </div>
+            <div class="contact col-3">
+                <p class="naming">contacts</p>
+
+            </div>
+
+            <div class="bottom">
+                @2018 Company Privacy Policy | Terms & Conditions
+            </div>
+
+        </footer>
 
 
 </div>
