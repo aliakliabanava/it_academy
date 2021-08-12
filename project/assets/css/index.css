@@ -7,13 +7,11 @@ p.body_text {
     font-weight: 200;
 }
 
-.header {
-    /* padding: 0px 5px; */
-    background-image: url(/project/assets/images/imgonline-com-ua-Resize-v3CRh1nYEYGmBBkv.jpg);
+header.header {
+    background-image: url(/project/assets/images/image_3.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    
 }
 
 .register {
@@ -37,7 +35,6 @@ p.body_text {
 .call {
     display: flex;
     flex-basis: 30%;
-    /* justify-content: space-between; */
 }
 
 .appointment {
@@ -57,7 +54,11 @@ p.body_text {
 .head_info .appointment {
     display: block;
     margin-top: 40px;
-    box-shadow: ;
+}
+
+.head_info .appointment  .button{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
 
 .register .fas, .far {
@@ -89,29 +90,32 @@ p.body_text {
     border: none;
 }
 
+
 .navbar a {
     padding-left: 10px !important;
     color: white;
     border-radius: 5px;
 }
+
 .navbar a:hover {
     background-color: rgba(227, 235, 241, .4);
 }
 
-.nav_form {
-    border: none;
-}
-.nav_form:focus {
+.btn_nav:focus {
     border: none;
     box-shadow: none;
 }
 
-/* .form_search::after {
-    font-family: "Font Awesome 5 free"; 
-	font-weight: 900;
-	content: "\f07a";
-    display: inline-block;
-} */
+.nav_form {
+    background-color: rgba(227, 235, 241, .4);
+    border: none;
+}
+
+.nav_form:focus {
+    background-color: rgba(227, 235, 241, .4);
+    border: none;
+    box-shadow: none;
+}
 
 .form_search {
     position: relative;
@@ -126,12 +130,10 @@ p.body_text {
     right: 8px;
 }
 
-.btn_search::before {
-       
+.btn_search::before {  
         color: #F9F0DA;
         font-size: 20px;
-        font-weight: bold;
-      
+        font-weight: bold;  
 }
 
 .about {
@@ -140,29 +142,32 @@ p.body_text {
     display: block;
     min-height: 450px;
     color: white;
-    background-color: #5D62B5;
-   
+    background-color: #5D62B5; 
+}
+
+section.about {
+    margin-bottom: -60px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
 }
 
 .add_info_about {
-    padding-bottom: 100px;
+    padding-bottom: 10px;
     width: 75%;
     margin: 0 auto;
 }
 
 .dog_center {
     position: relative;
-    height: 350px;
-    width: 600px;
+    height: 200px;
+    width: 350px;
     margin: 0 auto;
 }
 
-
 div.dog_center img#dog {
     position: absolute;
-    width: 600px;
+    width: 350px;
 }
-
 
 .overline {
     letter-spacing: 2px;
@@ -184,10 +189,44 @@ h2 {
 }
 
 .add_info_about {
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
 
+section.impact {
+    position: relative;
+    padding: 20px 5px;
+    min-height: 100px;
+    background-color: #29C3BE;
+    color: white;
+}
+
+.impact_items {
+    padding: 10px 5px;
+    flex-wrap: wrap;
+}
+
+.impact_item img {
+    width: 35px;
+}
+
+.impact_item {
+    flex-wrap: wrap;
+}
+
+.impact_item p {
+    color: #5D62B5;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 5px;
+}
+
+.number {
+    color: white;
+    font-size: 14px;
+    font-weight: bolder;
+}
 
 .info_box img {
     width: 50px;
@@ -203,22 +242,48 @@ h2 {
     color:#F2726F;
     font-size: 20px;
     font-weight: 600;
+    padding-left: 65px;
 }
 
-footer {
+footer .icon {
+    font-weight: 500;
+    padding-bottom: 15px;
+    font-size: 24px;
+}
+
+.footer_info { 
     justify-content: space-between;
-    padding-top: 40px;
-    background-color: #F5F5F5;
+    align-items: top;
+    padding: 10px;
+    font-size: 14px;
+}
+
+ .s_media .fab, .contact .fas {
+    padding-top: 3px;
+    color: #F2726F;  
 }
 
 .s_media {
-    color: #F2726F;
+    border-bottom: 1px solid #5D62B5;
+    padding-bottom: 20px;
+}
+
+.links {
+    border-bottom: 1px solid #5D62B5;
+}
+
+footer .naming{
+    font-weight: 500;
 }
 
 .links ul{
     list-style-type: none;
-    column-count: 2;
-    padding-left: 0px;
+    padding: 10px 0px;
+}
+
+.links li {
+    display: inline;
+    margin-right: 20px;
 }
 
 .links li a{
@@ -231,12 +296,13 @@ footer {
     font-size: 12px;
     height: 50px;
     color: white;
-    padding-top: 15px;
+    padding: 12px 10px;
     text-align: right;
     background-color: #5D62B5;
 }
 
-@media (min-width: 576px) {
+
+@media (min-width: 660px) {
     .appointment {
         display: inline;
         flex-basis: 25%;
@@ -246,13 +312,16 @@ footer {
         height: ;
     }
 
+    .nav_form {
+        background-color: white;
+    }
+
     .navbar a:hover {
         color: black;
-        /* font-weight: bolder; */
         background: none;
     }
 
- .nav_panel {
+    .nav_panel {
         background-color: white;
         border-radius: 10px;
         padding-left: 15px;
@@ -265,11 +334,13 @@ footer {
         justify-content: space-between;
     }
 
-    
-
-    .header {
+    header.header {
         display: block;
         height: 500px;
+    }
+
+    .head_info .appointment  .button {
+        border-radius: 5px;
     }
 
     .register, .navbar, .head_info {
@@ -277,77 +348,97 @@ footer {
         margin: 0 auto;
     }
 
-    .about {
-        width: 75%;
+    section.about {
         margin: -60px auto;
+        width: 75%;
         border-radius: 25px;
     }
+
+    .dog_center {
+        height: 350px;
+        width: 600px;
+    }
     
-   .about::after {
+    div.dog_center img#dog {
+        width: 600px;
+    }
+    
+    .about::after {
        position: absolute;
        right: -10%;
        top: -30%;
        content: url(/project/assets/images/Stylize\ Circles.png);
-   }
+    }
 
-   .add_info_about {
+    .add_info_about {
+       padding-bottom: 100px;
+       width: 75%;
        flex-direction: row;
        flex-wrap: wrap;
        justify-content: space-between;
-   }
-   .head_infobox {
+    }
+
+    .head_infobox {
        flex-basis: 100%;
-   }
-   .info_box {
+    }
+
+    .info_box {
        margin-top: 40px;
        flex-basis: 30%;
-   }
+    }
 
-   section.impact {
-       position: relative;
-       padding-top: 80px;
-       min-height: 350px;
-       background-color: #29C3BE;
-       color: white;
-   }
-
-   section.impact::after {
+    section.impact::after {
        border-radius: 25px;
        position: absolute;
        right: 150px;
        top: -100px;
        content: url(/project/assets/images/pup300.png);
-   }
+    }
 
-   .impact_info {
+    .impact_info {
        width: 75%;
        margin: 0 auto;
-   }
+    }
 
-   .impact_items {
+    .impact_items {
        padding-top: 40px;
-       justify-content: space-between;
-   }
+    }
 
-   .impact_item img {
+    .impact_item img {
        padding-top: 5px;
        width: 55px;
-       /* float: left; */
-   }
+    }
 
-   .impact_item p {
-       color: #5D62B5;
-       display: inline-block;
-       vertical-align: top;
-       padding-left: 5px;
-   }
-
-
-   .number {
-       color: white;
+    .number {
        font-size: 30px;
-       font-weight: bolder;
-   }
+    }
 
-  
+    footer {
+    justify-content: space-between;
+    background-color: #F5F5F5;
+     }
+
+    .footer_info {
+    padding: 100px 0px;
+    margin: 0 auto;
+    width: 75%;
+    }
+
+    .links ul{
+    column-count: 2;
+    }
+
+    .links li{
+    display: block;
+    }
+
+    .s_media, .links {
+    border: none;
+    }
+
+    section.impact {
+    padding: 100px 0px;
+    min-height: 350px;
+    }
+ 
 }

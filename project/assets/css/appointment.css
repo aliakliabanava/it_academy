@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+.servises {
+    background-color: #F5F5F5;
+    display: block;
+    min-height: 500px;
+}
+
+.make_appointment {
+    background-color: #5D62B5;
+    color: white;
+}
+
+h1 {
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+}
+
+fieldset {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.button {
+    display: inline;
+    padding-top: 3px;
+    margin-bottom: 30px;
+}
+
+.app_input, select, textarea {
+    color: white;
+    height: 40px;
+    width: 150px;
+    font-size: 14px;
+    background-color: #5D62B5;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin: 15px 5px;
+}
+
+::placeholder {
+    color: white;
+}
+
+textarea {
+    height: 150px;
+    width: 315px;
+    margin-bottom: 20px;
+}
+
+.app_info {
+    display: none;
+}
+
+@media (min-width: 720px) {
+
+    .make_appointment {
+        position: relative;
+        background-image: url(/project/assets/images/dogs2.png);
+        width: 100%;
+        min-height: 700px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .make_appointment::after {
+        position: absolute;
+        top: 240px;
+        left: 40px;
+        content: url(/project/assets/images/Stylize\ Circles.png);
+    }
+
+    .make_appointment::before {
+        z-index: 1;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 200px;
+        content: url(/project/assets/images/blob2.png);
+        box-shadow:  0 0 3px #5D62B5;
+    }
+
+   .form_block {
+       z-index: 2;
+       position: absolute;
+       top: 80px;
+       left: 150px;
+       background-color: #5D62B5;
+       display: block;
+       width: 450px;
+       border-radius: 15px;
+       box-shadow: 0 0 10px rgba(0,0,0,0.5) ;
+   }
+
+   .app_info {
+       float: right;
+       margin-top: 200px;
+       margin-right: 100px;
+       display: block;
+       width: 280px;
+       text-align: center;
+       font-size: 24px;
+       font-weight: bold;
+   }
+
+   .app_info span {
+       font-size: 40px;
+       
+   }
+
+    
+}
+
+@media (max-width: 1000px) {
+    .app_info {
+        display: none;
+    }
+}
+
