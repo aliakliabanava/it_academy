@@ -2,11 +2,24 @@
     box-sizing: border-box;
 }
 
-.servises {
+.services {
+    padding-top: 30px;
     background-color: #F5F5F5;
-    display: block;
-    min-height: 500px;
 }
+
+.services .overline {
+    color: #5D62B5;
+}
+
+/* #accordion {
+    padding: 30px 5px;
+}
+.services .btn {
+    text-decoration: none;
+    color: #F2726F;
+    font-weight: bold;
+    box-shadow: none;
+} */
 
 .make_appointment {
     background-color: #5D62B5;
@@ -23,7 +36,7 @@ fieldset {
     padding-top: 40px;
 }
 
-.button {
+.button_in_form {
     display: inline;
     padding-top: 3px;
     margin-bottom: 30px;
@@ -53,6 +66,40 @@ textarea {
 .app_info {
     display: none;
 }
+
+.blocks {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .block {
+      
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    width: 95%;
+    background-color: rgb(255, 254, 254);
+    box-shadow: 0 0 2px rgba(0,0,0,0.5);
+  }
+  
+  .icon_serv {
+    margin-bottom: 15px;
+    width: 50px;
+  }
+
+  .blocks h3{
+      padding: 0px;
+  } 
+
+  .wrapper {
+    width: 100%;
+    
+}
+  
 
 @media (min-width: 720px) {
 
@@ -106,16 +153,33 @@ textarea {
    }
 
    .app_info span {
-       font-size: 40px;
+       font-size: 48px;
        
    }
 
-    
+   .blocks {
+    flex-direction: row;
+     justify-content: space-between;
+  }
+
+  .block {
+    margin-bottom: 15px;
+    flex-basis: 32%;
+  }
+
+  .wrapper {
+      width: 75%;
+      margin: 0 auto;
+      padding-bottom: 50px;
+  }
+
 }
 
 @media (max-width: 1000px) {
     .app_info {
         display: none;
     }
+
+    
 }
 
