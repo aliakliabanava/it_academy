@@ -1,14 +1,20 @@
 * {
     box-sizing: border-box;
 }
-
+body {
+    background-color: #F5F5F5;
+}
 p.body_text {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 200;
 }
 
+.header {
+    padding: 0px 10px;
+}
+
 header.header {
-    background-image: url(/project/assets/images/image_3.png);
+    background-image: url(../images/image_3.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -19,26 +25,88 @@ header.header {
     display: flex;
     color: white;
     justify-content: space-between;
+    align-content: center;
     font-size: 11px;
 }
 
 .icon {
-    font-size: 18px;
-    flex-basis: 25%;
+    font-size: 24px;
+    flex-basis: 33%;
+    order: 3;
 }
 
 .working_hours {
-    display: flex;
-    flex-basis: 30%;
+    display: none;
 }
 
 .call {
-    display: flex;
-    flex-basis: 30%;
+    display: none;
 }
 
 .appointment {
     display: none;
+}
+
+.search_first {
+    order: 2;
+}
+
+.container {
+    position: relative;
+}
+
+.lupa {
+    flex-basis: 20%;
+    font-size: 24px;
+}
+
+.search_first input {
+    display: none;
+}
+
+ .container:hover input {
+    border-radius: 5px;
+    display: block;
+    position: absolute;
+    height: 30px;
+    width: 150px;
+}
+
+.navbar {
+    flex-basis: 45%;
+}
+
+.navbar-light .navbar-toggler {
+    border: none;
+}
+
+.search_button {
+    border: none;
+    background-color: white;
+}
+
+.search_button::before {
+    font-size: 14px;
+    border: none;
+    font-family: "Font Awesome 5 free"; 
+	font-weight: 900;
+	content: "\f002";
+}
+
+.register input {
+    height: 25px;
+    width: 150px;
+    border: none;
+}
+
+.register input:focus {
+    outline: none;
+}
+
+.register form {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: white;
 }
 
 .header .head_info h1{
@@ -91,13 +159,16 @@ header.header {
 }
 
 
-.navbar a {
-    padding-left: 10px !important;
+.navbar-light .navbar-nav .nav-link  {
+    padding-left: 10px;
     color: white;
     border-radius: 5px;
+    font-size: 14px;
 }
 
-.navbar a:hover {
+.navbar-light .navbar-nav .nav-link:hover {
+    color: white;
+    font-weight: 500;
     background-color: rgba(227, 235, 241, .4);
 }
 
@@ -111,29 +182,8 @@ header.header {
     border: none;
 }
 
-.nav_form:focus {
-    background-color: rgba(227, 235, 241, .4);
-    border: none;
-    box-shadow: none;
-}
-
 .form_search {
-    position: relative;
-}
-
-.btn_search {
-    background-color: white;
-    border: none;
-    font-weight: lighter;
-    position: absolute;
-    top: 5px;
-    right: 8px;
-}
-
-.btn_search::before {  
-        color: #F9F0DA;
-        font-size: 20px;
-        font-weight: bold;  
+    display: none;
 }
 
 .about {
@@ -155,6 +205,14 @@ section.about {
     padding-bottom: 10px;
     width: 75%;
     margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.info_box {
+    padding: 5px;
+
 }
 
 .dog_center {
@@ -188,12 +246,6 @@ h2 {
     margin-bottom: 50px;
 }
 
-.add_info_about {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
 section.impact {
     position: relative;
     padding: 20px 5px;
@@ -203,12 +255,12 @@ section.impact {
 }
 
 .impact_items {
-    padding: 10px 5px;
     flex-wrap: wrap;
 }
 
 .impact_item img {
     width: 35px;
+    padding-top: 10px;
 }
 
 .impact_item {
@@ -263,7 +315,12 @@ footer .icon {
     color: #F2726F;  
 }
 
+.s_media .fab {
+    font-size: 24px;
+}
+
 .s_media {
+    justify-content: center;
     border-bottom: 1px solid #5D62B5;
     padding-bottom: 20px;
 }
@@ -279,11 +336,13 @@ footer .naming{
 .links ul{
     list-style-type: none;
     padding: 10px 0px;
+    text-align: center;
 }
 
 .links li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 30px;
+    line-height: 30px;
 }
 
 .links li a{
@@ -302,18 +361,24 @@ footer .naming{
 }
 
 
-@media (min-width: 660px) {
-    .appointment {
-        display: inline;
-        flex-basis: 25%;
-    }
-
-    .register {
-        height: ;
-    }
+@media (min-width: 540px) {
 
     .nav_form {
         background-color: white;
+    }
+
+    .nav_form:focus {
+        background-color: rgba(227, 235, 241, .4);
+        border: none;
+        box-shadow: none;
+    }
+
+    
+
+    .form_search input {
+        height: 25px;
+        width: 150px;
+        border: none;
     }
 
     .navbar a:hover {
@@ -322,11 +387,10 @@ footer .naming{
     }
 
     .nav_panel {
-        background-color: white;
         border-radius: 10px;
-        padding-left: 15px;
         justify-content: space-between;
         font-weight: 600;
+        margin-left: 0px !important;
     }
 
     .nav_items {
@@ -336,7 +400,7 @@ footer .naming{
 
     header.header {
         display: block;
-        height: 500px;
+        min-height: 500px;
     }
 
     .head_info .appointment  .button {
@@ -362,12 +426,9 @@ footer .naming{
     div.dog_center img#dog {
         width: 600px;
     }
-    
-    .about::after {
-       position: absolute;
-       right: -10%;
-       top: -30%;
-       content: url(/project/assets/images/Stylize\ Circles.png);
+
+    .about h2 {
+        margin-right: 100px;
     }
 
     .add_info_about {
@@ -384,7 +445,7 @@ footer .naming{
 
     .info_box {
        margin-top: 40px;
-       flex-basis: 30%;
+       flex-basis: 50%;
     }
 
     section.impact::after {
@@ -392,7 +453,7 @@ footer .naming{
        position: absolute;
        right: 150px;
        top: -100px;
-       content: url(/project/assets/images/pup300.png);
+       content: url(../images/pup300.png);
     }
 
     .impact_info {
@@ -405,12 +466,11 @@ footer .naming{
     }
 
     .impact_item img {
-       padding-top: 5px;
-       width: 55px;
+       width: 50px;
     }
 
     .number {
-       font-size: 30px;
+       font-size: 28px;
     }
 
     footer {
@@ -426,6 +486,7 @@ footer .naming{
 
     .links ul{
     column-count: 2;
+    text-align: left;
     }
 
     .links li{
@@ -441,4 +502,76 @@ footer .naming{
     min-height: 350px;
     }
  
+}
+
+@media (min-width: 960px) {
+
+    .search_first {
+        display: none;
+    }
+
+    .working_hours {
+        display: flex;
+        flex-basis: 25%;
+    }
+    
+    .call {
+        display: flex;
+        flex-basis: 25%;
+    }
+
+    .icon {
+        flex-basis: 20%;
+        order: 0;
+    }
+
+    .appointment {
+        flex-basis: 25%;
+    }
+
+    .register {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .navbar {
+        order: 5;
+        flex-basis: 100%;
+    }
+
+    .nav_panel {
+        background-color: white;
+    }
+
+    .navbar-light .navbar-nav .nav-link  {
+        color: rgb(53, 52, 52);
+    }
+    
+    .navbar-light .navbar-nav .nav-link:hover {
+        color: rgb(53, 52, 52);
+        font-weight: 500;
+        background-color: rgba(227, 235, 241, .4);
+    }
+
+    .form_search {
+        display: inline;
+    }
+
+    .about::after {
+        position: absolute;
+        right: -10%;
+        top: -30%;
+        content: url(../images/Stylize\ Circles.png);
+     }
+
+    .info_box {
+        flex-basis: 33%;
+     }
+     
+     .appointment {
+        display: inline;
+        flex-basis: 25%;
+    }
+    
+    
 }

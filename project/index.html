@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link href="assets/fonts/fa/css/all.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -17,13 +17,23 @@
         <header class="header">
         
              <div class="register">
+
+                <div class="search_first">
+                    <div class="container">
+                        <span class="lupa">
+                          <i class="fa fa-search"></i>
+                        </span>
+                        <input type="search" id="search" placeholder="Search" />
+                    </div>
+                </div>
+
                 <div class="icon"> <i class="fas fa-volleyball-ball"></i> Petco </div>
                 <div class="working_hours"> <i class="far fa-clock"></i> <p><span class="naming">boarding hours </span><br>Mon-Sat: 7:00 am - 6:00 pm</p></div>
                 <div class="call"> <i class="fas fa-phone-alt"></i> <p><span class="naming">call us </span> <br>(555) Pup-Cares</p></div>
                 <div class="appointment"> <a class="button" href="services.html#make_an_appointment" target="blank">make an appointment</a> </div>
-            </div>
+            
 
-            <nav class="navbar navbar-expand-sm navbar-light nav_panel">
+            <nav class="navbar navbar-expand-lg navbar-light nav_panel">
                 <button class="navbar-toggler btn_nav" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                  <span class="navbar-toggler-icon stripes"></span>
              </button>
@@ -40,21 +50,22 @@
                     <a class="nav-link" href="#">Facilities</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Rewiews</a>
+                        <a class="nav-link" href="gallery.html">Rewiews</a>
                      </li>
-                     <li class="nav-item">
+                     <!-- <li class="nav-item">
                      <a class="nav-link disabled" href="#">Shop</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">About</a>
                      </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0 form_search">
-                <input class="form-control mr-sm-2 nav_form" type="search">
-                <button class="btn_search" type="submit"><i class="fas fa-search"></i></button>
+                <form class="form-inline my-2 my-lg-0 form_search search_nav">
+                <input class="mr-sm-2 nav_form" type="search">
+                <button class="search_button" type="submit"></button>
                 </form>
                 </div>
             </nav>
+        </div>
 
             <div class="head_info"><h1> Premier dog boarding,<br> daycare &amp; day spa</h1><div class="appointment"> <a href="services.html#make_an_appointment" class="button" target="blank">make an appointment</a> </div></div>
 
@@ -66,15 +77,15 @@
                     <h2>Nemo enim ipsam voluptatem quia voluptas in proident</h2>
                     <p class="body_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vehicula libero et eros vehicula ullamcorper. Nulla eu ultrices quam, vulputate volutpat quam. Sed pharetra lectus vel metus fringilla, non hendrerit metus venenatis. Aliquam maximus, libero vitae aliquam tincidunt, erat augue sodales nulla, sit amet egestas ligula sem sit amet nisi. Ut ipsum metus, rhoncus eget purus vel, hendrerit varius velit.</p>
                 </section>
-                <div class="dog_center"><img id="dog" src="/project/assets/images/dog.png"></div>
+                <div class="dog_center"><img id="dog" src="./assets/images/dog.png"></div>
                 
 
                 <section class="add_info_about">
                     <div class="head_infobox"><p class="overline">our promise to you</p>
                     <h2>Sed perspiciatis omnis iste natus</h2></div>
-                    <div class="info_box"><img src="/project/assets/images/dog_love_24x.png" alt="love andcare"><h3>24/7 Love & Care</h3><p class="body_text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti quos dolores et quas.</p></div>
-                    <div class="info_box"><img src="/project/assets/images/dog_vet_24x.png" alt="dog veterinar"><h3>On-site Veterinarian</h3><p class="body_text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti quos dolores et quas.</p></div>
-                    <div class="info_box"><img src="/project/assets/images/dog_stream_24x.png" alt="dog stream"><h3>Life-stream Cameras</h3><p class="body_text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti quos dolores et quas.</p></div>
+                    <div class="info_box"><img src="./assets/images/dog_love_24x.png" alt="love andcare"><h3>24/7 Love & Care</h3><p class="body_text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti quos dolores et quas.</p></div>
+                    <div class="info_box"><img src="./assets/images/dog_vet_24x.png" alt="dog veterinar"><h3>On-site Veterinarian</h3><p class="body_text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti quos dolores et quas.</p></div>
+                    <div class="info_box"><img src="./assets/images/dog_stream_24x.png" alt="dog stream"><h3>Life-stream Cameras</h3><p class="body_text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti quos dolores et quas.</p></div>
                 </section>
 
                 <section class="impact"> 
@@ -82,26 +93,26 @@
                     <p class="overline">our impact</p>
                     <h2>Nemo enim ipsam voluptatem quia voluptas in proident</h2>
                     <div class="impact_items row">
-                        <div class="impact_item col-sm-3 col-6"><img src="/project/assets/images/dog_duckling_24x.png" alt="dog duckling"><p><span class="number">3,700</span><br>puppy baths</p></div>
-                        <div class="impact_item col-sm-3 col-6"><img src="/project/assets/images/dog_house_24px.png" alt="dog house"><p><span class="number">4,500</span><br>dogs boarded</p></div>
-                        <div class="impact_item col-sm-3 col-6"><img src="/project/assets/images/dog_leash_24x.png" alt="leash"><p><span class="number">2,900</span><br>pups trained</p></div>
-                        <div class="impact_item col-sm-3 col-6"><img src="/project/assets/images/dog_food_bowl_24x.png" alt="food"><p><span class="number">12k+</span><br>meals served</p></div>
+                        <div class="impact_item col-sm-3 col-6"><img src="./assets/images/dog_duckling_24x.png" alt="dog duckling"><p><span class="number">3,700</span><br>puppy baths</p></div>
+                        <div class="impact_item col-sm-3 col-6"><img src="./assets/images/dog_house_24px.png" alt="dog house"><p><span class="number">4,500</span><br>dogs boarded</p></div>
+                        <div class="impact_item col-sm-3 col-6"><img src="./assets/images/dog_leash_24x.png" alt="leash"><p><span class="number">2,900</span><br>pups trained</p></div>
+                        <div class="impact_item col-sm-3 col-6"><img src="./assets/images/dog_food_bowl_24x.png" alt="food"><p><span class="number">12k+</span><br>meals served</p></div>
                     </div>
                 </div>
                 </section>
 
         </main>
 
-        <footer class="">
+        <footer class="footer">
             <div class="footer_info row">
             <div class="pepco col-md-3 ">
                 <div class="icon"> <i class="fas fa-volleyball-ball"></i> Petco </div>
                 <p> This is a blurb about the company sed do eusimod tempor incididunt ut labore et dolore ex magna aliqua</p>
                 <div class="s_media row">
-                    <i class="fab fa-facebook-f col-2"></i>
-                    <i class="fab fa-twitter col-2"></i>
-                    <i class="fab fa-instagram col-2"></i>
-                    <i class="fab fa-youtube col-2"></i>
+                    <i class="fab fa-facebook-f col-2 col-md-3"></i>
+                    <i class="fab fa-twitter col-2 col-md-3"></i>
+                    <i class="fab fa-instagram col-2 col-md-3"></i>
+                    <i class="fab fa-youtube col-2 col-md-3"></i>
                 </div>
             </div>
             <div class="links col-md-4">
