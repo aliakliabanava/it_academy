@@ -166,6 +166,7 @@ section.banner {
         top: 70px;
         display: none;
         width: inherit;
+        min-height: 300px;
     }
     
     input:checked + label + .text {
@@ -198,14 +199,14 @@ section.banner {
     .banner::after {
         position: absolute;
         bottom: 20px;
-        content: url(../images/Stylize\ Circles.png);
+        content: url("../images/Stylize\ Circles.png");
         z-index: 0;
     }
 
     .banner::before {
         position: absolute;
         z-index: 1;
-        content: url(../images/Blob_banner.png);
+        content: url("../images/Blob_banner.png");
     }
     .banner_info {
         position: relative;
@@ -220,7 +221,7 @@ section.banner {
         position: absolute;
         right: 10px;
         top: -20px;
-        content: url(../images/ball.png);
+        content: url("../images/ball.png");
     }
 }
 
